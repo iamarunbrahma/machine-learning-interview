@@ -1,5 +1,8 @@
 # Machine Learning Interview Preparation Guide
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Author: Arun Brahma](https://img.shields.io/badge/Author-Arun%20Brahma-purple)](https://github.com/iamarunbrahma)
+
 Preparing for a Machine Learning (ML) interview can be challenging, but with the right resources and guidance, you can ace your interview and land your dream job. This comprehensive guide will help you prepare for the various aspects of an ML interview, including coding, system design, and ML concepts.
 
 ## Leetcode Coding
