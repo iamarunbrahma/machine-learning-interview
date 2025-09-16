@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Author: Arun Brahma](https://img.shields.io/badge/Author-Arun%20Brahma-purple)](https://github.com/iamarunbrahma)
 
-Preparing for a Machine Learning (ML) interview can be challenging, but with the right (free) resources and a structured plan you can ace coding, system design, and domain-specific rounds. This guide now focuses on freely available materials (no paid courses) and adds coverage for Deep Learning, NLP, Computer Vision, Recommender Systems, Generative AI/LLMs, RAG, and Agentic AI.
+Preparing for a Machine Learning (ML) interview is easier with a focused plan and high-signal resources. This guide prioritizes free, reputable material and gives you a practical roadmap for coding, ML breadth, system design, and modern domains (DL, NLP, CV, RecSys, LLMs/RAG/Agents).
 
 ## What to expect (Big Tech vs Startups)
 
@@ -12,9 +12,6 @@ Preparing for a Machine Learning (ML) interview can be challenging, but with the
 - For both: prepare for coding, ML concepts, system design, and behavioral. Bring 2–3 projects you can whiteboard end-to-end.
 
 ## Coding (DSA)
-
-> [!TIP]
-> Pattern > grind. Use patterns repositories and redo mediums until you’re fast and correct.
 
 LeetCode is widely used for screening. Practice mixed difficulty and focus on patterns.
 
@@ -27,9 +24,9 @@ LeetCode is widely used for screening. Practice mixed difficulty and focus on pa
 ## ML System Design
 
 > [!IMPORTANT]
-> Open with goals/metrics/constraints. Walk data → features → training → eval → serving → monitoring. Call out trade-offs and failure modes.
+> Start with business goals and success metrics. Then walk data → features → training → evaluation → serving → monitoring. Make trade-offs and failure modes explicit.
 
-Understand the components and trade-offs from data to deployment; study real case studies; and practice clear, structured communication.
+Understand components and trade-offs from data to deployment; ground your answers in real case studies; communicate clearly and concisely.
 
 - Primer and frameworks (free):
   - [chiphuyen/machine-learning-systems-design](https://github.com/chiphuyen/machine-learning-systems-design)
@@ -42,15 +39,9 @@ Understand the components and trade-offs from data to deployment; study real cas
 - Production lessons:
   - [eugeneyan/applied-ml](https://github.com/eugeneyan/applied-ml)
 
-Tips
-
-- Open with goals, metrics, and constraints; enumerate data, features, modeling options, evaluation, deployment, and monitoring.
-- Prefer simple baselines first; iterate; discuss trade-offs, failure modes, and how you’d measure and improve.
+Prefer simple baselines first; iterate; discuss trade-offs, failure modes, and how you’ll measure and improve.
 
 ## ML Coding (from scratch and with libraries)
-
-> [!NOTE]
-> Build from-scratch muscle memory for a few core algorithms; use libraries to ship quickly.
 
 - Implement classics from scratch (e.g., linear/logistic regression, k-means, k-NN, decision trees, basic NN) to solidify fundamentals. Try: [eriklindernoren/ML-From-Scratch](https://github.com/eriklindernoren/ML-From-Scratch)
 - Be fluent with scikit-learn, PyTorch, and/or TensorFlow for fast prototyping.
@@ -107,14 +98,9 @@ Tips
 
 ## Big-picture preparation tips
 
-> [!TIP]
-> Practice whiteboarding with structure and timeboxes; favor clarity over exhaustive detail.
-
-> [!NOTE]
-> Keep a personal “wins and failures” log to support behavioral answers with measurable impact.
-
-> [!IMPORTANT]
-> Build and demo 1–2 small end-to-end projects (e.g., ranking, anomaly detection, simple RAG chatbot) and be ready to discuss design and trade-offs.
+Practice whiteboarding with structure and timeboxes; favor clarity over exhaustive detail.
+Keep a personal “wins and failures” log to support behavioral answers with measurable impact.
+Build and demo 1–2 small end-to-end projects (e.g., ranking, anomaly detection, simple RAG chatbot) and be ready to discuss design and trade-offs.
 
 ## Curated free, reputable ML interview guides
 
@@ -125,9 +111,24 @@ Tips
 - Rishabh Bhatia DS Interview Resources: https://github.com/rbhatia46/Data-Science-Interview-Resources
 - Deep Learning Interviews (free arXiv PDF): https://github.com/BoltzmannEntropy/interviews.ai
 
+## End-to-end personal projects (free Kaggle)
+
+- H&M Personalized Fashion Recommendations (RecSys, retrieval + ranking): https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations
+- IEEE-CIS Fraud Detection (large-scale, heavy class imbalance): https://www.kaggle.com/competitions/ieee-fraud-detection
+- Google Analytics Customer Revenue Prediction (forecasting/regression, leakage-aware CV): https://www.kaggle.com/c/ga-customer-revenue-prediction
+- M5 Forecasting – Accuracy (hierarchical time series forecasting): https://www.kaggle.com/competitions/m5-forecasting-accuracy
+- Mercari Price Suggestion (tabular + text, feature engineering at scale): https://www.kaggle.com/competitions/mercari-price-suggestion-challenge
+
+Project deliverables to aim for
+
+- Clear problem definition and success metrics
+- Clean feature pipeline (document point-in-time correctness)
+- Offline evaluation (appropriate metrics) and a simple online plan
+- Lightweight serving stub (batch or API) and monitoring checklist
+
 ## 30-day preparation plan
 
-- Format: 6 days/week + 1 lighter buffer/retro day. Each day ~2–4 hours. Mix DSA, ML concepts/coding, system design, and one domain. Keep notes and practice aloud.
+- Format: 6 days/week + 1 lighter buffer/review day. Each day ~2–4 hours. Mix DSA, ML concepts/coding, system design, and one domain. Keep notes and practice aloud.
 
 Week 1 (Foundations + Patterns)
 
@@ -136,8 +137,8 @@ Week 1 (Foundations + Patterns)
 - Day 3: DSA hashing; ML concepts: regularization, calibration, class imbalance; Domain: CV basics (edges, HOG)
 - Day 4: DSA stacks/queues; System design: metrics, goals, constraints; Case study skim (Engineer1999)
 - Day 5: DSA binary search; ML coding: k-NN, k-means; Domain: RecSys paradigms (CF/content/hybrid)
-- Day 6: Mock 1 (30m coding + 30m ML breadth); Retro + fix weak spots
-- Day 7: Light buffer: flashcards + 1–2 LeetCode mediums
+- Day 6: Timed practice session (30m coding + 30m ML breadth); review and fix weak spots
+- Day 7: Light buffer: 1–2 LeetCode mediums
 
 Week 2 (Graphs + System Design)
 
@@ -146,7 +147,7 @@ Week 2 (Graphs + System Design)
 - Day 10: DSA heaps/priority queues; ML coding: decision trees; Domain: CV CNNs
 - Day 11: DSA intervals/greedy; System design: serving, latency/throughput/SLO; Introduce monitoring
 - Day 12: DSA backtracking; Domain: NLP sequence models, attention; LLM evaluation basics
-- Day 13: Mock 2 (system design 45m); Retro + flashcards
+- Day 13: System design scenario drill (45m); review
 - Day 14: Light buffer: 1 domain deep-dive reading + 1 LC medium
 
 Week 3 (Optimization + Domain Rotations)
@@ -156,24 +157,24 @@ Week 3 (Optimization + Domain Rotations)
 - Day 17: ML coding: PyTorch quickstart; Domain: LLM RAG basics (chunking, vector DB)
 - Day 18: DSA practice set (4 mediums); Domain: Agentic patterns; Monitoring hallucinations
 - Day 19: Projects polish: small E2E demo (ranking or RAG chatbot); Prepare talking points
-- Day 20: Mock 3 (coding+ML breadth); Retro + create new flashcards
+- Day 20: Integrated timed session (coding + ML breadth); review
 - Day 21: Light buffer: review errors log + 1 LC hard attempt
 
-Week 4 (Polish + Mocks)
+Week 4 (Polish + Drills)
 
 - Day 22: System design dry runs (recap structure); Case studies scan (genAI/LLM)
 - Day 23: DSA mixed timed set (3 mediums); ML coding: pipeline hygiene
 - Day 24: Domain pick 1 deep dive: DL or NLP; summarize 5 Q/A
 - Day 25: Domain pick 2 deep dive: CV or RecSys; summarize 5 Q/A
 - Day 26: Domain pick 3 deep dive: LLM/RAG/Agentic; summarize 5 Q/A
-- Day 27: Mock 4 (full loop: coding + ML breadth + system design); Retro
+- Day 27: Full-cycle dry run (coding + system design); review
 - Day 28: Behavioral prep (STAR stories x6); metrics/impact framing
-- Day 29: Final gaps: flashcards pass + 2 mediums; sleep routine
+- Day 29: Final gaps: error log pass + 2 mediums; sleep routine
 - Day 30: Light review only; logistics; hydrate + rest
 
 Deliverables each day
 
-- 2–4 LC problems (pattern-aligned); 3–5 new flashcards; 5–10 lines of notes; 1 case study bullet takeaway on SD days.
+- 2–4 LC problems (pattern-aligned); 5–10 lines of notes; 1 case study bullet takeaway on SD days.
 
 ## One-page printable checklist
 
@@ -232,14 +233,15 @@ Deliverables each day
 - [ ] Behavioral
   - [ ] STAR stories ×6 with metrics and failure lessons
 
-- [ ] Mocks (×4)
-  - [ ] Coding
-  - [ ] ML breadth
-  - [ ] System design
+
 
 - [ ] Logistics
   - [ ] Environment setup, whiteboard kit
   - [ ] Calendar blocks, rest plan
+
+## Contribute & share
+
+⭐ Star this repo, share it with a friend, and open a PR if you have a great free resource to add.
 
 ## Attribution
 
